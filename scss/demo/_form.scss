@@ -1,0 +1,28 @@
+
+/*-----------------------------------------------------------------------------------
+
+	Form: form.scss
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Form Styles
+-----------------------------------------------------------------*/
+#subscribe {
+    position: relative;
+    padding: 4rem 2rem;
+}
+
+.contact-info {
+    padding: 3rem;
+    background-color: $theme-color;
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 0;
+        left: 7rem;
+        height: 100%;
+        margin: 0;
+    }
+}

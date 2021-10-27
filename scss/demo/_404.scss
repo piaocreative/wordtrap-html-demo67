@@ -1,0 +1,21 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+#error-404 {
+    position: relative;
+    padding-bottom: 20rem;
+    z-index: 1;
+}
+
+.error-thumbnail {
+    position: absolute;
+    left: -5rem;
+    bottom: 1rem;
+    z-index: -1;
+
+    img {
+        max-width: 100%;
+    }
+}
