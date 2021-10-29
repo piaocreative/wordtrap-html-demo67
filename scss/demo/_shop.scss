@@ -31,7 +31,6 @@
 
 .product {
 	position: relative;
-	margin-bottom: 1.875rem;
 
 	.product-image {
 		position: relative;
@@ -43,7 +42,8 @@
 	}
 
 	.product-details {
-		padding: 0 4rem;
+		position: relative;
+		padding: 1rem 4rem 0;
 		z-index: 1;
 	}
 
@@ -62,7 +62,6 @@
 		del {
 			font-size: 0.875rem;
 			color: #48494d;
-			margin-left: 0.5rem;
 		}
 	}
 
@@ -101,28 +100,26 @@
 		text-transform: uppercase;
 		white-space: nowrap;
 	}	
+
+	@include media-breakpoint-down(lg) {
+		margin-bottom: 1.875rem;
+	}
 }
 
 .onnew, .onsale {
-	font-size: 0.75rem;
-	font-weight: 500;
+	font-family: $heading-font;
+	font-size: 0.875rem;
 	position: absolute;
 	top: 1rem;
-	left: 1rem;
-	text-transform: uppercase;
-	color: $theme-color;
-	letter-spacing: 0.05rem;
-	padding: 0.2rem 0.25rem;
-	border-radius: 50%;
-	color: $white;
+	right: 4.5rem;
 }
 
 .onnew {
-	background-color: #242424;
+	color: #17e879;
 }
 
 .onsale {
-	background-color: $theme-color;
+	color: #e85c17;
 }
 
 .ads {
